@@ -1,5 +1,6 @@
 """
-This is an advanced server that uses the pydantic library to create a data model for the products and the warehouse catalog.
+This is an advanced server that uses pydantic to define
+data models for the products and the warehouse catalog.
 """
 
 from fastapi import FastAPI, HTTPException
@@ -7,7 +8,7 @@ from pydantic import BaseModel
 
 
 # create data model
-class Product(BaseModel):
+class Product(BaseModel):  # pylint: disable=too-few-public-methods
     """
     Data model for the products in the warehouse catalog.
 

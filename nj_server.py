@@ -8,6 +8,8 @@ from fastapi import FastAPI, HTTPException
 
 
 class ProductInfo(TypedDict):
+    """Information about a catalog product."""
+
     units: str
     qty: int
 
