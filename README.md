@@ -36,15 +36,15 @@ To activate your `.venv` environment (created by `uv sync`):
 uvicorn nj_server:app --reload
 ```
 
-4. Your server will now be available on port 8000 in your browser. 
-To interact with your API's backend Navigate to: 
+4. Your server will now be available on port 8000 in your browser.
+To interact with your API's backend Navigate to:
 ```
 localhost:8000/docs
 ```
 
 <img width="600" alt="FastAPI Swagger UI Backend Screenshot" src="https://github.com/user-attachments/assets/bad37e97-96c9-4fdb-83e9-9a3e5cbc7b1f"/>
 
-Or navigate directly to an endpoint like: 
+Or navigate directly to an endpoint like:
 ```
 http://127.0.0.1:8000/warehouse/tomatoes?order_qty=30
 ```
@@ -75,7 +75,7 @@ localhost:8001
 ## Dependencies 💻
 - **FastAPI** — for building the API.
 - **Uvicorn** — ASGI server to run the app.
-- HTTP client libraries used in `ny_client.py`: 
+- HTTP client libraries used in `ny_client.py`:
     - requests
     - jinja2
     - python-multipart
